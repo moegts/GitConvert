@@ -12,7 +12,28 @@
         
     </header>
     <main>
-
+        <section id="sectionGitLive">
+            <fieldset>
+                <legend>Repo to Live</legend>
+                <form id="formGitLive">
+                    <label for="repoLink">Repo Link:</label>
+                    <input type="url" name="Repo Link" placeholder="https://github.com/username/Repositorie" id="repoLink"  required>
+                </form>
+                <br>
+                <button id="but1" type="submit" form="formGitLive" value="Submit">Convert to Live</button>
+                <a id="output" target="_blank"></a>
+            </fieldset>
+            <fieldset>
+                <legend>Live to Repo</legend>
+                <form id="formGitRepo">
+                    <label for="liveLink">Live Link:</label>
+                    <input type="url" name="Live Link" placeholder="https://username.github.io/Repositorie" id="liveLink" required>
+                </form>
+                <br>
+                <button id="but1" type="submit" form="formGitRepo" value="Submit">Convert to Repo</button>
+                <a id="outputR" target="_blank"></a>
+            </fieldset>
+        </section>
     </main>
     <footer>
 

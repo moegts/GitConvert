@@ -1,0 +1,33 @@
+body{
+    background-color: teal;
+}
+main{
+    height: 95vh;
+    width: 65vw;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+#sectionGitLive{
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+fieldset{
+    width: 27vw;
+    height: 20vh;
+    padding-top: 27px;
+}
+
+input{
+    width: 16vw;
+}
