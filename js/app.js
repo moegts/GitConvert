@@ -1,6 +1,8 @@
 'use strict';
 let liveForm = document.getElementById('formGitLive');
 let repoForm = document.getElementById('formGitRepo');
+
+
 let sectionGitLive = document.getElementById('sectionGitLive');
 
 let Converter = function(link){
@@ -9,6 +11,7 @@ let Converter = function(link){
 }
 
 Converter.all=[];
+
 
 
 liveForm.addEventListener('submit', getFormData1)
