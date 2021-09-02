@@ -5,12 +5,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 main{
-    height: 95vh;
+    height: auto;
     width: 65vw;
     margin: auto;
     align-items: center;
     align-content: center;
-    padding: 10px;
+    padding: 1vw;
 }
 
 #sectionGitLive{
@@ -27,7 +27,7 @@ main{
 
 fieldset{
     width: 27vw;
-    height: 23vh;
+    height: auto;
     padding-top: 27px;
     color: white;
     background-color: #424242;
@@ -35,6 +35,24 @@ fieldset{
     border-radius: 50px;
     border-spacing: 3px;
     border-top-style: unset;
+    padding-bottom: 3rem;
+}
+
+#userNamesList{
+    display: flex;
+    text-align: center;
+    flex-direction: initial;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 30px;
+    padding-top: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.h4User{
+    display: inline-block;
+    margin-left: 1vw;
 }
 
 label{

@@ -23,6 +23,7 @@
                 <button id="but1" type="submit" form="formGitLive" value="Submit">Convert to Live</button>
                 <a id="output" target="_blank"></a>
             </fieldset>
+
             <fieldset>
                 <legend>Live to Repo</legend>
                 <form id="formGitRepo">
@@ -33,12 +34,29 @@
                 <button id="but1" type="submit" form="formGitRepo" value="Submit">Convert to Repo</button>
                 <a id="outputR" target="_blank"></a>
             </fieldset>
+
+            <!-- New Student Form -->
+            <fieldset id="StudentFieldset">
+                <legend>New Student</legend>
+                <form id="formAddStudent">
+                    <label for="userName">UserName:</label>
+                    <input type="text" name="userName" placeholder="UserName" id="userName" required>
+                </form>
+                <br>
+                <button id="but1" type="submit" form="formAddStudent" value="Submit">+ New Student</button>
+                <br>
+                <div id="userNamesList">
+
+                </div>
+            </fieldset>
         </section>
+
     </main>
     <footer>
 
     </footer>
     <script src="./js/app.js"></script>
+    <script src="./js/users.js"></script>
     
 </body>
 </html>
