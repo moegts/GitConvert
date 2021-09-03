@@ -90,6 +90,22 @@ border-radius: 10px;
 box-shadow: 0 9px #999;
 }
 
+#but2 {
+margin-top: 10px;
+display: inline-block;
+padding: 7px 14px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: red;
+border: none;
+border-radius: 10px;
+box-shadow: 0 9px #999;
+}
+
 button:hover {background-color: #3e8e41}
 
 button:active {
