@@ -9,6 +9,7 @@ let Users = function(usersName, userId){
 }
 
 Users.all=[];
+// new Users('blank', 'blank');
 
 addUserForm.addEventListener('submit', getUserName)
 function getUserName(event){
@@ -22,11 +23,12 @@ function getUserName(event){
 Users.prototype.renderUser = function(){
     let usersName = this.usersName;
     let userId = this.userId;
+    let user = document.getElementById('userName').value;
 
     let userNamesList = document.getElementById('userNamesList')
     let DivEle = document.createElement('div');
     DivEle.setAttribute('id',userId)
-    DivEle.setAttribute('name',userNum)
+    DivEle.setAttribute('name',user)
     userNamesList.appendChild(DivEle);
 
     let removeUser = document.createElement('button')
@@ -54,15 +56,18 @@ Users.prototype.renderUser = function(){
 let remover = function(userId){
     let userIdRemove = userId.id;
 
-    let elementToRemove = document.getElementById(userIdRemove);
-    elementToRemove.remove();
-    let userNumber = elementToRemove.getAttribute('name');
-    let RealNumber = userNumber - 1;
-    Users.all = Users.all.filter(function (el) {
-        delete Users.all['usersName', RealNumber];
-        return el != null;
-    });
-    console.log(RealNumber);
+    let elementToRemove = document.getElementById(userIdRemove); // to get the element we want to delete (Div)
+    elementToRemove.remove(); // delete the Div
+
+    let userName = elementToRemove.getAttribute('name'); // get the name of the element its match the UserName
+
+    let compare = JSON.stringify({usersName: userName, userId: userIdRemove}); // here i did convert the object to string so i can compare it with all the constractor
+        for (let i = -1; i < Users.all.length; i++) {
+            if (JSON.stringify(Users.all[i]) == compare) {
+                delete Users.all[i];
+                Users.all = Users.all.filter(function () { return true })
+            }
+        }
     console.log(Users.all);
 }
 
