@@ -71,6 +71,12 @@ let remover = function(userId){
     console.log(Users.all);
 }
 
+let ClearUsers = function(){
+    Users.all = Users.all.filter(function () { return false })
+    document.getElementById('userNamesList').innerHTML = "";
+    console.log(Users.all);
+}
+
 // add users to localstoarge
 // make the user allways show in the screen even after refresh
 // dont allow add same user 2 times
